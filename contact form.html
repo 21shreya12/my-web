@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!--
+
+<tittle> STUDENT REGISTRATION FORM </tittle>
+ <style type="text/css">
+      body{
+      background-image:conic-gradient(white,red);
+    }
+
+   button{
+    font-size: 25px;
+    background-color: #aa33rr;
+    border: 5px solid #445566;
+    border-radius: 30px;
+    box-shadow: rgba(50, 70, 60, 1.0);
+    padding-right:10px;
+    padding-left: 12px;
+
+   }
+   button:hover{
+    background-color:#ff3433;
+    border: solid;
+    border-color: black;
+    padding: 10px;
+    box-sizing: border-box;
+   }
+   .social-icon{
+    list-style-type: none;
+    padding: 0;
+
+   }
+.social-icon.fa-whatsapp {
+  background: green;
+  color: green;
+}
+
+
+.social-icon.fa-instagram {
+  background: #125688;
+  color: orangered;
+}
+.social-icon li{
+  display: inline-block;
+  margin-right: 15px;
+}
+.social-icon i{
+  font-size: 35px;
+  color: darkblue;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 22px rgba(0,0,0,0.1);
+  padding: 12px;
+
+}
+
+.social-icon i.fa-whatsapp{
+  font-size: 35px;
+  color: green;
+  padding: 12px;
+  background-color: #fff;
+  }
+  .social-icon i.fa-instagram{
+  font-size: 35px;
+  color: darkorange;
+  padding: 12px;
+  background-color: #fff;
+  }
+  .social-icon i.fa-facebook{
+  font-size: 35px;
+  color: slateblue;
+  padding: 12px;
+  background-color: #fff;
+  }
+  .social-icon i.fa-linkedin{
+  font-size: 35px;
+  color: cadetblue;
+  padding: 12px;
+  background-color: #fff;
+  }
+  .social-icon i.fa-youtube{
+  font-size: 35px;
+  color: palevioletred;
+  padding: 12px;
+  background-color: #fff;
+  }
+  .social-icon i.fa-twitter{
+  font-size: 35px;
+  color: royalblue;
+  padding: 12px;
+  background-color: #fff;
+  }
+
+
+
+form{
+  width: 500px;
+  height: 500px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: lightblue;
+  border: 7px hidden dimgrey;
+  margin-left: 100px;
+  margin-right:45px;
+  }
+
+  </style>
+  
+  </head>
+    <body>
+    <form>
+    <fieldset>
+
+    <label>Firstname:</label><br>
+    <input type="First Name:" placeholder="Enter your name"><br><br><br>
+
+   <label>Middlename : </label><br>
+   <input type="Middlename" placeholder="Enter your Middlename"><br><br>
+        
+   <label>lastname:</label><br>
+   <input type="lastname:" placeholder="Enter your lastname" ><br><br>
+   <label>Subject:</label><br>
+   <input type="Subject Name:" placeholder="Enter your Subject Name" ><br><br>
+
+        
+        <center>       
+        <input class="text" type="submit" value="REGISTER" size="100"><br><br>
+        </center> 
+  <center>
+  <button>Submit</button></center>
+  <ul class="social-icon">
+    <li> <a href="https://www.facebook.com/login/" ><i class="fa fa-facebook-f"> </i></a>
+ </li>
+ <li> <a href="https://developer.twitter.com/en/docs/authentication/guides/log-in-with-twitter"><i  class="fa fa-twitter"></i></a>
+</li>
+ <li> <a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
+</li>
+ <li><a href="#" ><i class="fa fa-youtube"></i></a>
+
+</li>
+    <li> <a href="#" ><i class="fa fa-instagram"></i></a>
+ </li>
+  </ul>
+  </form>
+  </fieldset>
+  </body>
+  </html>
+  <!-->
+
+ <style type="text/css">
+      body{
+      background-image:conic-gradient(white);
+    }
+    center{
+  box-shadow: grey;
+  cursor: pointer;
+}
+          .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+         .appointment-btn{
+            padding: 6px 0px;
+            background-color: rgb(0, 153, 204);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+           transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .appointment-btn:hover {
+            background-color: rgb(11, 201, 355);  
+        }
+     header{
+      width: 100%;
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: lightskyblue;
+
+
+    }
+      nav {
+          padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+    }
+    nav:hover{
+
+    }
+    .logo:hover{
+     height: 40px;
+
+    }
+    ul li{
+     padding-right: 25px;
+    }
+    .logo{
+      font-size: 30px;
+      font-weight: bold;
+      color: floralwhite;
+      letter-spacing: 1.5px;
+      cursor:pointer;
+    }
+    nav li{
+      display: inline-block;
+      padding: 14px,16px;
+      transition: width,background,3s;
+      background-color: lightred;
+    }
+    a,button{
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 30px;
+
+    }
+    button{
+      background-color: rgba(0,0,0,0.2);
+      border: 2px solid #662900;
+      border-radius: 45px;
+      padding: 35px 25px;
+
+    }
+    nav li a:hover{
+      color: #662900;
+    }
+    .abc{
+      text-align: left;
+      color: blue;
+    }
+
+
+center:hover {
+ padding: 25px 50px;
+  cursor: pointer;
+
+}
+h1{
+  font-style: italic;
+  font-size: 30px;
+  color: black;
+}
+h4{
+  color: black;
+}
+.b,button{
+      background-color: red;
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 15px 40px;
+    }
+.a,button{
+      text-decoration: none;
+      background-color: yellow;
+      padding: 15px 40px;
+      color: black;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+
+}
+.abc{
+  color: blue;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+  </style>
+  </head>
+    <body>
+          <header>
+    <div class="logo">
+      <p> HEALTH PLUS +</p>
+    </div>
+    <nav>
+  <ul class="nav-links">
+  <li><a href="nav.html" class="glyphicon glyphicon-home">Home</a></li>
+    <li><a href="services.html" class="glyphicon glyphicon-envelope">Services</a></li>
+    <li><a href="doct list.html" class="glyphicon glyphicon-user">Docters</a></li>
+      <li><a href="thanku p.html" class="glyphicon glyphicon-chevron-left">Pages</a></li>
+  <li><a href="contact form.html" class="glyphicon glyphicon-earphone">Contact</a></li>
+    <li><a href="about.html" class="glyphicon glyphicon-globe">About</a></li>
+</ul>
+<button class="appointment-btn"><a class="glyphicon glyphicon-chevron-left"  href="new web .html">GET APPOINTMENT </a></button></nav>
+</header>
+
+
+      <div class="about">  
+    </div>
+      <p>
+      <center>
+     <img src="doct apppt 2.jpg" height="400px" width="400px"></center>
+     <center class="abc">
+      <h1> Contact Us :+91 7789765478
+ </h1> </center>
+<h2>
+This Hospitals is always looking to make things easier for you. Our aim is to provide our customers with the best medical facilities, constant care, and reliable support. If you would like to get in touch with a doctor from a specific department, would like some specific information about the services we provide, or just have a question for us, please fill up the Form given below and we will get back to you.
+</h2>
+</p>
+<button class="a">Book Health Check-Up</button>
+<button class="b"> Book Appointment</button>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

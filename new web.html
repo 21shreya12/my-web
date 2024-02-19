@@ -1,0 +1,198 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Navbar with Logo and Sign Up Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           background-image: url("images for web.png") ;
+
+            background-size: cover;
+        }
+
+        /* Navbar styles */
+        nav {
+            background-color: rgba(10, 50, 70,0.6);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Logo styles */
+        .logo {
+            display: inline-block;
+            background: linear-gradient(90deg, white,rgb(51, 201, 255)); /* Gradient font color */
+            -webkit-background-clip: text; /* Clip the text to the gradient */
+            color: transparent; /* Make the text transparent to reveal the gradient */
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            transition: background-position 0.3s ease;
+        }
+        .logo:hover {
+            background-position: 100% 0;
+        }
+
+        /* Navigation links styles */
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: border-bottom 0.3s ease;
+        }
+
+         .nav-links a:hover {
+           border-bottom: 2px solid rgb(51, 201, 255);
+        }
+
+         
+        .appointment-btn{
+            padding: 10px 20px;
+            background-color: rgb(0, 153, 204);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+           transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .appointment-btn:hover {
+            background-color: rgb(51, 201, 255);  
+            transform: scale(1.1);  
+        }
+          
+
+        /* Form container styles */
+        .form-container {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: grey;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(10, 20, 30, 0.1);
+            float: left;
+            margin-left: 20px;
+            width: 600px;
+        }
+        h2{
+            color: white;
+        }
+        /* Form input styles */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: white;
+        }
+
+        input, select {
+            margin-bottom: 16px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Submit button styles */
+        button {
+            background-color: rgb(0, 153, 204);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+             background-color: rgb(51, 201, 255);  
+            transform: scale(0.9);  
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <!-- Logo -->
+        <a href="#" class="logo">HealthPlus +</a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#" class="glyphicon glyphicon-home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="doct list.html" class="glyphicon glyphicon-user">Docters</a></li>
+            <li><a href="thanku p.html">Pages</a></li>
+
+        </ul>
+
+       
+        <button class="appointment-btn">Get Appointment</button>
+    </nav>
+    <div class="form-container">
+        <h2>Book an Appointment</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="appointment-type">Appointment Type:</label>
+            <select id="appointment-type" name="appointment-type" required>
+                <option value="general">General Consultation</option>
+                <option value="specialist">Specialist Appointment</option>
+                <option value="follow-up">Follow-up Appointment</option>
+            </select>
+
+            <label for="preferred-date">Preferred Date:</label>
+            <input type="date" id="preferred-date" name="preferred-date" required>
+
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" rows="2"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+     
+
+</body>
+</html>
